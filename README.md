@@ -14,3 +14,6 @@ important when the Ansible user requests elevated permission to install httpd.
 The httpd playbook installs, starts, and enables httpd as well as replaces
 the default index.html page with one notifying the user that the image was
 provisioned with Packer and Ansible.
+
+For an example of how to deploy this image after creating it, please refer to
+https://github.com/Omar-Khawaja/terraform_aws
