@@ -1,0 +1,10 @@
+---
+# tasks file for install_httpd
+
+- name: Install httpd
+  yum: name=httpd state=installed
+
+- name: Configure custom home page
+  template: src=index.html.j2 dest=/var/www/html/index.html
+  notify:
+    - start and enable httpd
